@@ -11,7 +11,7 @@ print("A: Try to squeeze through the small window? ")
 time.sleep(1)
 print("or")
 time.sleep(1)
-print("B: Go back to sleep on the cold, dirty floor? ")
+print("B: Go back to sleep on the cold, dirty floor?")
 choice1 = input("Type A or B: ")
 if choice1 == "a" or choice1 == "A":   #Choice 1a
     time.sleep(2)
@@ -39,7 +39,18 @@ if choice1 == "a" or choice1 == "A":   #Choice 1a
         choice3 = input("Type A or B: ")
         if choice3 == "B" or choice3 == "b":  #Choice 3b
             time.sleep(2)
-            print("You take the lantern, it might be useful.")
+            print("You decide to take the lantern, it will greatly help you in navigating the dark cemetery.")
+            time.sleep(2)
+            print("At the far end of the cemetery you can see the entrance gate.")
+            time.sleep(2)
+            print("Good thing you picked up the lantern or you could have fallen down a deep hole in the middle of\n"
+                  "the cemetery.")
+            time.sleep(4)
+            print("Arriving at the entrance you can see tall trees and a road leading into the woods, later\n"
+                  "splitting in two.")
+            time.sleep(4)
+            print("To be continued...")
+
         elif choice3 == "A" or "a":   #Choice 3a
             time.sleep(2)
             print("For whatever reason, you decide to leave the lantern...")
