@@ -1,10 +1,8 @@
-#choices = ["A" or "B"]
 import time
-print("~~~~~~~~~~~~~~~~~~~~~")
 print("This is a story")
-print("~~~~~~~~~~~~~~~~~~~~~")
+print("~~~~~~~~~~~~~~~~~~~~~~~~")
 name = input("What is your name?: ")
-print("Hi", name, "!", "This is your story.")
+print("Greetings", name + "!", "This is your story.")
 time.sleep(2)
 print("You wake up in a cold, dark room with only one small window.")
 time.sleep(2)
@@ -15,42 +13,68 @@ print("or")
 time.sleep(1)
 print("B: Go back to sleep on the cold, dirty floor? ")
 choice1 = input("Type A or B: ")
-if choice1 == "a" or choice1 == "A":
+if choice1 == "a" or choice1 == "A":   #Choice 1a
     time.sleep(2)
     print("You managed to squeeze through the small window only to end up in an even darker cemetery...")
     time.sleep(2)
     print("You can see a dim light in the distance.")
     time.sleep(2)
     print("Do you: ")
-    print("A: Go towards the dim light? ")
+    print("A: Go towards the light?")
     time.sleep(1)
     print("or")
     time.sleep(1)
     print("B: Stay and wait? ")
-    choice2a = input("Type A or B: ")
-    if choice2a == "A" or choice2a == "a":
-        print("You made it out alive somehow...")
+    choice2 = input("Type A or B: ")
+    if choice2 == "A" or choice2 == "a":   #Choice 2a
+        time.sleep(2)
+        print("You walk towards the light only to find out it's just an old oil lantern.")
+        time.sleep(2)
+        print("Do you: ")
+        print("A: Leave it?")
+        time.sleep(1)
+        print("or")
+        time.sleep(1)
+        print("B: Take the lantern?")
+        choice3 = input("Type A or B: ")
+        if choice3 == "B" or choice3 == "b":  #Choice 3b
+            time.sleep(2)
+            print("You take the lantern, it might be useful.")
+        elif choice3 == "A" or "a":   #Choice 3a
+            time.sleep(2)
+            print("For whatever reason, you decide to leave the lantern...")
+            time.sleep(2)
+            print("You try to navigate through the rest of the dark cemetery without any kind of light source...")
+            time.sleep(2)
+            print("Suddenly you fall into a deep hole and break both your legs. You can't seem to get up.")
+            time.sleep(1)
+            print("RIP", name + ".")
+        else:
+            time.sleep(2)
+            print("You decided to answer neither A or B.")
+            time.sleep(2)
+            print("You died. RIP", name + ".")
 
+    elif choice2 == "b" or choice2 == "B":   #Choice 2b
+        time.sleep(2)
+        print("You decide to stay where you are...")
+        time.sleep(2)
+        print("Suddenly you get stabbed in the back by something sharp.")
+        time.sleep(1)
+        print("You fall to the ground and later bleed out...")
+        time.sleep(1)
+        print("RIP", name + ".")
+    else:
+        time.sleep(2)
+        print("You decided to answer neither A or B.")
+        time.sleep(2)
+        print("You died. RIP", name + ".")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-if choice1 == "b" or choice1 == "B":
-    print("You lay yourself down on the cold floor again only to later die of starvation & dehydration. RIP.")
-
-
-
+elif choice1 == "b" or choice1 == "B":   #Choice 1b
+    time.sleep(2)
+    print("You lay yourself down on the cold floor again only to later die of starvation & dehydration. RIP", name + ".")
 else:
-    print("You became confused and died. RIP.")
-
+    time.sleep(2)
+    print("You decided to answer neither A or B.")
+    time.sleep(2)
+    print("You died. RIP", name + ".")
