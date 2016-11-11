@@ -39,7 +39,7 @@ if choice1 == "a" or choice1 == "A":   #Choice 1a
         choice3 = input("Type A or B: ")
         if choice3 == "B" or choice3 == "b":  #Choice 3b
             time.sleep(2)
-            print("You decide to take the lantern, it will greatly help you in navigating the dark cemetery.")
+            print("You decide to take the lantern, it will be very useful in helping you navigating the dark cemetery.")
             time.sleep(2)
             print("At the far end of the cemetery you can see the entrance gate.")
             time.sleep(2)
@@ -83,7 +83,9 @@ if choice1 == "a" or choice1 == "A":   #Choice 1a
 
 elif choice1 == "b" or choice1 == "B":   #Choice 1b
     time.sleep(2)
-    print("You lay yourself down on the cold floor again only to later die of starvation & dehydration. RIP", name + ".")
+    print("You try to go back to sleep...")
+    time.sleep(2)
+    print("Time goes by and you later die of starvation & dehydration. RIP", name + ".")
 else:
     time.sleep(2)
     print("You decided to answer neither A or B.")
