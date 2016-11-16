@@ -1,4 +1,6 @@
 import time
+
+
 print("This is a story")
 print("~~~~~~~~~~~~~~~~~~~~~~~~")
 name = input("What is your name?: ")
